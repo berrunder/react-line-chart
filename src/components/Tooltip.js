@@ -43,11 +43,6 @@ class Tooltip extends React.PureComponent {
               <feMergeNode in="SourceGraphic"/>
             </feMerge>
           </filter>
-          <filter id="f3" x="0" y="0" width="200%" height="200%">
-            <feOffset result="offOut" in="SourceAlpha" dx="10" dy="2"/>
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2"/>
-            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
-          </filter>
         </defs>
 
         <line
